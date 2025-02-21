@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZARA:MAN</title>
+    <link rel="stylesheet" href="man.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="Heading h-[22vh] w-full bg-[#F4F2EF] fixed z-50">
+      <div class="title ">
+        <a href="/index.html" style="text-decoration: none;"><i class="ri-home-3-line"></i></a>
+        <h1 class="text-8xl py-4">MENS FASHION</h1>
+      </div>
+      <div class="sections">
+        <ul class="flex gap-5 mt-4 px-8">
+          <li><a href="#section1" ><button class="section1 active border-2 border-transparent rounded-3xl px-8 py-1 flex items-center bg-white text-lg tracking-wide shadow-lg hover:bg-zinc-400 hover:text-white"><span>Shirts</span></button></a></li>
+          <li><a href="#section2" ><button class="section2 border-2 border-transparent rounded-3xl px-8 py-1 flex items-center bg-white text-lg tracking-wide shadow-lg hover:bg-zinc-400 hover:text-white"><span>T-Shirts</span></button></a></li>
+          <li><a href="#section3" ><button class="section3 border-2 border-transparent rounded-3xl px-8 py-1 flex items-center bg-white text-lg tracking-wide shadow-lg hover:bg-zinc-400 hover:text-white"><span>Trousers</span></button></a></li>
+          <li><a href="#section4" ><button class="section4 border-2 border-transparent rounded-3xl px-8 py-1 flex items-center bg-white text-lg tracking-wide shadow-lg hover:bg-zinc-400 hover:text-white"><span>Jeans</span></button></a></li>
+          <li><a href="#section5" ><button class="section5 border-2 border-transparent rounded-3xl px-8 py-1 flex items-center bg-white text-lg tracking-wide shadow-lg hover:bg-zinc-400 hover:text-white"><span>Shorts</span></button></a></li>
+          <li><a href="#section6" ><button class="section6 border-2 border-transparent rounded-3xl px-8 py-1 flex items-center bg-white text-lg tracking-wide shadow-lg hover:bg-zinc-400 hover:text-white"><span>Polo Shirts</span></button></a></li>
+          <li><a href="#section7" ><button class="section7 border-2 border-transparent rounded-3xl px-8 py-1 flex items-center bg-white text-lg tracking-wide shadow-lg hover:bg-zinc-400 hover:text-white"><span>Linen</span></button></a></li>
+          <li><a href="#section8" ><button class="section8 border-2 border-transparent rounded-3xl px-8 py-1 flex items-center bg-white text-lg tracking-wide shadow-lg hover:bg-zinc-400 hover:text-white"><span>Blazers</span></button></a></li>
+          <li><a href="#section9" ><button class="section9 border-2 border-transparent rounded-3xl px-8 py-1 flex items-center bg-white text-lg tracking-wide shadow-lg hover:bg-zinc-400 hover:text-white"><span>Jackets</span></button></a></li>
+          <li><a href="#section10" ><button class="section10 border-2 border-transparent rounded-3xl px-8 py-1 flex items-center bg-white text-lg tracking-wide shadow-lg hover:bg-zinc-400 hover:text-white"><span>Shoes</span></button></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content">
+      <section id="section1">
+          <div class="cards"></div>
+      </section>
+      <section id="section2">
+          <div class="cards"></div>
+      </section>
+      <section id="section3">
+        <div class="cards"></div>
+      </section>
+      <section id="section4">
+        <div class="cards"></div>
+      </section>
+      <section id="section5">
+        <div class="cards"></div>
+      </section>
+      <section id="section6">
+        <div class="cards"></div>
+      </section>
+      <section id="section7">
+        <div class="cards"></div>
+      </section>
+      <section id="section8">
+        <div class="cards"></div>
+      </section>
+      <section id="section9">
+        <div class="cards"></div>
+      </section>
+      <section id="section10">
+        <div class="cards"></div>
+      </section>
+    </div>
+    
+    <!-- UPDATED -->
+    <script>
+      const currentSection = window.location.href.split('#')[1]
+
+      console.log(currentSection)
+      document.querySelectorAll(".sections li button").forEach(button=>{
+        button.classList.remove('active')
+      })
+
+      document.querySelector(`.sections li button.${currentSection}`).classList.add('active')
+      
+    </script>
+    
+    <!-- UPDATED -->
+
+      <script src="man.js"></script>
+    
+</body>
+</html>

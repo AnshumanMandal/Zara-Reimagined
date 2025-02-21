@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZARA:KIDS</title>
+    <link rel="stylesheet" href="kids.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="Heading h-[26vh] w-full bg-[#F4F2EF] fixed z-50">
+      <div class="title ">
+        <!-- <h1 class = "hero"><a href="/index.html" style="text-decoration: none;"></a></h1> -->
+        <a href="/index.html" style="text-decoration: none;"><i class="ri-home-3-line"></i></a>
+        <h1 class="text-8xl py-4">KIDS FASHION</h1>
+      </div>
+      <div class="sections">
+        <ul class="flex gap-5 mt-4 px-8">
+          <li><a href="#section1"  ><button class="section1 active border-2 border-transparent rounded-3xl px-8 py-1 flex items-center bg-white text-lg tracking-wide shadow-lg hover:bg-zinc-400 hover:text-white"><span>Girls</span></button></a></li>
+          <li><a href="#section2" ><button class="section2 border-2 border-transparent rounded-3xl px-8 py-1 flex items-center bg-white text-lg tracking-wide shadow-lg hover:bg-zinc-400 hover:text-white"><span>Boys</span></button></a></li>
+          <li><a href="#section3" ><button class="section3 border-2 border-transparent rounded-3xl px-8 py-1 flex items-center bg-white text-lg tracking-wide shadow-lg hover:bg-zinc-400 hover:text-white"><span>Baby</span></button></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content">
+      <section id="section1">
+          <div class="cards py-4 mt-[13vh]">
+
+          </div> 
+      </section>
+      <section id="section2">
+          <div class="cards py-4 -mt-[54vh]"></div>
+      </section>
+      <section id="section3">
+        <div class="cards py-4 -mt-[54vh]"></div>
+    </section>
+    </div>  
+
+    <!-- UPDATED -->
+    <script>
+      const currentSection = window.location.href.split('#')[1]
+
+      console.log(currentSection)
+      document.querySelectorAll(".sections li button").forEach(button=>{
+        button.classList.remove('active')
+      })
+
+      document.querySelector(`.sections li button.${currentSection}`).classList.add('active')
+      
+    </script>
+    
+    <!-- UPDATED -->
+      <script src="kids.js"></script>
+    
+</body>
+</html>

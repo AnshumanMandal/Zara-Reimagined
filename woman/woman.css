@@ -1,0 +1,208 @@
+@font-face {
+    /* font-family: chian; */
+    src: url(./font/2e3e13bdd28941438adf.woff2);
+    font-family: zolina;
+    src: url(/-Code-Beetles-ReimagineRound1-main/font/Zolina\ Light.woff2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+}
+
+body{
+    background-color: #F4F2EF;
+    scroll-behavior: auto;
+    overflow-x: hidden;
+}
+
+body .Heading .title i{
+    font-size: 3vw;
+    top: 2vw;
+    color: #000;
+    position: absolute;
+    padding-left: 3vw;
+}
+
+.Heading ul li{
+    list-style: none;
+}
+
+.Heading ul li a {
+    text-decoration: none;
+}
+.Heading ul li a button.active{
+    background-color: black;
+    color: white;
+}
+
+.title h1{
+    font-family: zolina;
+    text-align: center;
+    letter-spacing: 0.01em;
+    font-weight: 500;
+}
+
+.content{
+    display: flex;
+    width: 900%;
+    padding:  0em 0em;
+}
+
+section{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4F2EF;
+    padding-left: 1.2em;
+}
+
+.cards{
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    /* padding: 0em; */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.8em;
+}
+
+.image>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 1s;
+    object-position:center;
+}
+
+.image>img:hover{
+    scale: 1.2;
+}
+
+.content .cards .bottom{
+    bottom:-40%;
+    transition: all ease 0.5s;
+}
+
+.content .cards .card:hover .bottom{
+    bottom: 0;
+}
+
+
+/*for Mobile*/
+@media (max-width:600px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html,body{
+        width: 100%;
+    }
+    
+    body{
+        background-color: #F4F2EF;
+        scroll-behavior: auto;
+        overflow-x: visible;
+    }
+    
+    body .Heading .title i{
+        font-size: 7.5vw;
+        color: #000;
+        position: absolute;
+        padding-left: 1vw;
+        top: 6vw;
+}
+    
+    .Heading ul li{
+        list-style: none;
+    }
+    
+    .Heading ul li a {
+        text-decoration: none;
+    }
+    .Heading ul li a button.active{
+        background-color: black;
+        color: white;
+    }
+    
+    .title h1{
+        font-family: zolina;
+        text-align: center;
+        position: relative;
+        letter-spacing: 0.01em;
+        font-weight: 400;
+        font-size: 9vw;
+        overflow-x: hidden;
+        top: 4vw;
+        left: 6vw;
+        right: 2vw;
+    }
+    
+    .Heading .sections{
+        overflow-x: visible;
+        position: relative;
+        display: flex;
+        overflow: scroll;
+        top: 3vw;
+        padding-bottom: 1vw;
+        line-height: 5vw;
+    }
+
+    .content{
+        display: flex;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    
+    .content section{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F4F2EF;
+        padding: 1vw 2vw;
+        overscroll-behavior-x: none;
+    }
+    
+    .cards{
+        width: 100%;
+        /* height: 100%; */
+        display: flex;
+        justify-content: center;
+        /* padding: 0em; */
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1em;
+        padding: 5vw 3vw;
+        margin-top: 10vh;
+    }
+    
+    .image>img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: all ease 1s;
+        object-position: center;
+    }
+    
+    .image>img:hover{
+        scale: 1.2;
+    }
+    
+    .content .cards .bottom{
+        bottom:-55%;
+        transition: all ease 0.5s;
+    }
+    
+    .content .cards .card:hover .bottom{
+        bottom: 0;
+    }
+}
